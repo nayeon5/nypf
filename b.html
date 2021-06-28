@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<meta charset="urf-8">
+
+<head>
+    <style>
+        nav ul{
+            width:100%;
+           /* background-color: rgba(255, 255, 255, 0.983);*/
+            list-style-type: none;
+            margin:0;
+            padding: 0;
+        }
+        nav ul li{
+            display: inline-block;
+        }
+        .home{
+            background-color: #0084c9;
+            border-radius:50px;
+            width:100px;
+            text-align: center;
+            font-weight: bold;
+            float:right;
+        }
+        .home a{
+            display: block;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            padding: 16px 16px;
+        }
+        .dropdown{
+            position: relative; /* 이를 기준 절대위치 지정*/
+        }
+        .dropdown-menu{
+            color: #0084c9;
+            font-weight: bold;
+            padding: 16px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        .dropdown-content{
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+            display:none;
+        }
+        .dropdown-menu:hover:not(.home){
+            background-color: #0084c9;
+            color:white;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .dropdown-content a:hover{
+            background-color: #f1f1f1;
+        }
+        
+        body{
+    background-image: url(cl.gif);
+    background-size: cover;
+    text-decoration: none;
+}
+    .navbottom{width: auto; height: 50PX;}
+    .mainbody{width:auto; height:1200px; background-color: white;
+        overflow: hidden; overflow:scroll;  margin-left:auto; margin-right:auto; padding:50px;text-align: center;}
+    .mainbody ul li img{object-fit: cover; text-align: center; width:85%;margin-left:auto; margin-right:auto; padding-bottom: 50px;}
+    .mainbody ul{list-style-type: none;margin-left:auto; margin-right:auto; margin-top: 0; margin-bottom: 0;}
+    .mainbody::-webkit-scrollbar-track {
+  background-color: #f1f1f1;}
+  .mainbody::-webkit-scrollbar-thumb {
+  background-color: #3255a6;}
+  .mainbody::-webkit-scrollbar {width: 15px;}
+
+  a {text-decoration: none; color:#0084c9;}
+  a:hover{color: white;}
+
+    </style>
+    <title>brading</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="dropdown">
+                <div class="dropdown-menu"><a href="cocosis.html">코코시스</a></div>
+                <div class="dropdown-content">
+                </div>
+            </li>
+            <li class="dropdown">
+                <div class="dropdown-menu"><a href="tbd.html">TBD</a></div>
+
+            </li>
+            <li class="home"><a href="nypf.html">HOME</a></li>
+        </ul>
+    </nav>
+
+    <div class="navbottom"></div>
+    <div class="mainbody"><ul>
+        <li><img src="cocosis.jpg"></li>
+    </ul></div>
+</body>
+</html>
